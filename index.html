@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <main>
+        <header>
+            <img src="./imgs/Logo-1.png" alt="">
+        </header>
+        <section id="section__input">
+            <textarea id="input__text" placeholder="Ingresa el texto aqui" ></textarea>
+        </section>
+        <section id="section__footer">
+            <p>
+                <img src="./imgs/bi_exclamation-circle-fill.png" alt="">
+                Solo letras minusculas y sin acento
+            </p>
+            <div class="wrapper_btns">
+                <button class="btn"  id="encrypt">Encriptar</button>
+                <button class="btn" id="desencrypt">Desencriptar</button>
+            </div>
+        </section>
+        <section id="section_creator">
+            <p>Desarrollador: Cruz Alejandro Tomas Martinez</p>
+
+        </section>
+    </main>
+    
+    <aside>
+        <div id="wrapper">
+            
+            <div class="no_msg">
+                <div id="container_img">
+                    <img src="./imgs/Muñeco.png" alt="">
+                </div>
+                <div id="container_msg">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+
+            <section id="box-text">
+                <p id="response_text">
+                    
+                </p>
+                <button class="btn" id="btn_copy">Copiar</button>
+            </section>
+        </div>
+        <!-- <section id="box-text">
+            
+        </section> -->
+       
+    </aside>
+    
+    
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+}
+body main {
+  width: 75%;
+  height: 100dvh;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+body main header img {
+  width: 8vw;
+  object-fit: cover;
+}
+body main #section__input {
+  flex: 1;
+  background-color: white;
+  width: 100%;
+  padding: 2rem;
+}
+body main #section__input #input__text {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  color: #0a3871;
+  border: none;
+  outline: none;
+  margin-left: 3rem;
+}
+body main #section__footer {
+  min-height: 9vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main #section__footer p {
+  width: calc(30vw + 2rem);
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+body main #section__footer .wrapper_btns {
+  flex: 1;
+}
+body main #section__footer .wrapper_btns .btn {
+  height: 8vh;
+  border: none;
+  border-radius: 10px;
+  width: 15vw;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #0a3871;
+  background-color: white;
+}
+body main #section__footer .wrapper_btns .btn:nth-child(1) {
+  margin-right: 2rem;
+  background-color: #0a3871;
+  color: white;
+}
+body main #section_creator {
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+body aside {
+  width: 25%;
+  height: 100dvh;
+  padding: 1rem 0;
+}
+body aside #wrapper {
+  display: flex;
+  place-items: center;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+}
+body aside #wrapper .no_msg {
+  width: 100%;
+  min-height: 70%;
+}
+body aside #wrapper .no_msg #container_img {
+  width: 100%;
+  height: 60%;
+}
+body aside #wrapper .no_msg #container_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+body aside #wrapper .no_msg #container_msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+}
+body aside #wrapper .no_msg #container_msg h2 {
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+}
+body aside #wrapper .no_msg #container_msg p {
+  font-size: 1rem;
+}
+body aside #wrapper #box-text {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  place-items: center;
+  padding: 1rem 0;
+}
+body aside #wrapper #box-text #response_text {
+  width: 100%;
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: gray;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+body aside #wrapper #box-text #response_text::-webkit-scrollbar {
+  display: none;
+}
+body aside #wrapper #box-text #btn_copy {
+  height: 8vh;
+  width: 15vw;
+  border-radius: 10px;
+  border: 1px solid #0a3871;
+  cursor: pointer;
+}
+body aside #wrapper #box-text #btn_copy:hover {
+  color: white;
+  background-color: #0a3871;
+}
+
+@media (max-width: 1024px) {
+  body {
+    flex-direction: column;
+    width: 100vw;
+    height: 100dvh;
+  }
+  body main {
+    width: 100%;
+    height: 80dvh;
+  }
+  body main header img {
+    width: 15vw;
+    object-fit: cover;
+  }
+  body main #section__input #input__text {
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+  body main #section__footer p {
+    width: 100%;
+    margin-left: 4rem;
+  }
+  body main #section__footer .wrapper_btns .btn {
+    height: 5vh;
+    width: 40vw;
+  }
+  body aside {
+    width: 100%;
+    height: auto;
+    max-height: 40%;
+    min-height: 20%;
+  }
+  body aside #wrapper .no_msg #container_img {
+    display: none;
+  }
+  body aside #wrapper #box-text p {
+    font-size: 2rem;
+  }
+  body aside #wrapper #box-text #btn_copy {
+    height: 5vh;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+  }
+  body aside #wrapper #box-text #btn_copy:hover {
+    color: black;
+    background-color: white;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    width: 100vw;
+    height: 100dvh;
+  }
+  body main {
+    width: 100%;
+    height: 80dvh;
+  }
+  body main header img {
+    width: 15vw;
+    object-fit: cover;
+  }
+  body main #section__input #input__text {
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+  body main #section__footer p {
+    width: 100%;
+    margin-left: 4rem;
+  }
+  body main #section__footer .wrapper_btns .btn {
+    height: 5vh;
+    width: 40vw;
+  }
+  body aside {
+    width: 100%;
+    height: auto;
+    max-height: 40%;
+    min-height: 20%;
+  }
+  body aside #wrapper .no_msg #container_img {
+    display: none;
+  }
+  body aside #wrapper #box-text p {
+    font-size: 2rem;
+  }
+  body aside #wrapper #box-text #btn_copy {
+    height: 5vh;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+  }
+  body aside #wrapper #box-text #btn_copy:hover {
+    color: black;
+    background-color: white;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    min-height: 100dvh;
+  }
+  body main {
+    width: 100vw;
+    height: 80dvh;
+  }
+  body main header img {
+    width: 15vw;
+    object-fit: cover;
+  }
+  body main #section__input #input__text {
+    font-size: 1rem;
+    margin-left: 0rem;
+  }
+  body main #section__footer {
+    width: 100%;
+  }
+  body main #section__footer p {
+    width: 100%;
+    margin-left: 4rem;
+  }
+  body main #section__footer .wrapper_btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body main #section__footer .wrapper_btns .btn {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  body aside {
+    width: 100%;
+    height: auto;
+    min-height: 20%;
+  }
+  body aside #wrapper .no_msg #container_img {
+    display: none;
+  }
+  body aside #wrapper #box-text p {
+    font-size: 1rem;
+  }
+  body aside #wrapper #box-text #btn_copy {
+    height: 5vh;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+  }
+  body aside #wrapper #box-text #btn_copy:hover {
+    color: black;
+    background-color: white;
+  }
+}
+
+
